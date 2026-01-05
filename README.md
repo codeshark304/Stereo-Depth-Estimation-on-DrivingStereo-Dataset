@@ -57,9 +57,8 @@ This step is the **main source of error** in classical stereo pipelines, especia
 
 Depth is computed using the standard stereo formula:
 
-\[
-\text{Depth} = \frac{f \cdot B}{d}
-\]
+<img width="223" height="86" alt="image" src="https://github.com/user-attachments/assets/f7da84e3-e37b-4226-837d-912c3d15308c" />
+
 
 Where:
 
@@ -92,3 +91,18 @@ They are converted to meters using:
 
 ```python
 gt_depth = gt_depth / 256.0
+```
+
+### 5. Install Dependencies
+
+```python
+pip install opencv-python numpy
+```
+
+```python
+cd dataset
+```
+
+```python
+python main.py
+```
