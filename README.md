@@ -30,13 +30,27 @@ The dataset provides:
 ## Directory Structure
 
 dataset/
+├── left/
+│ └── *.png
+│ Left camera images (grayscale)
 │
-├── left/ # Left camera images (grayscale)
-├── right/ # Right camera images (grayscale)
-├── disparity_map/ # Ground-truth disparity maps (16-bit PNG)
-├── depth_map/ # Ground-truth depth maps (16-bit PNG)
-├── calib/ # Camera calibration files
-└── main.py # Depth estimation and evaluation script
+├── right/
+│ └── *.png
+│ Right camera images (grayscale)
+│
+├── disparity_map/
+│ └── *.png
+│ Ground-truth disparity maps (16-bit PNG)
+│
+├── depth_map/
+│ └── *.png
+│ Ground-truth depth maps (16-bit PNG)
+│
+├── calib/
+│ └── *.txt
+│ Camera calibration files
+│
+└── main.py
 
 
 ---
